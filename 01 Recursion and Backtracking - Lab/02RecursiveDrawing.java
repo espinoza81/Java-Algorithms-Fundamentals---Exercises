@@ -12,11 +12,7 @@ public class RecursiveDrawing {
 
     private static void draw(int number, String signTop, String signBottom) {
       
-        if(number == 1) {
-            System.out.println(signTop);
-            System.out.println(signBottom);
-            return;
-        }
+        if(number == 0) return;
 
         System.out.println(drawRow(number, signTop));
 
